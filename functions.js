@@ -10,9 +10,9 @@ function createNavbar() {
 
     // Define the links and their attributes
     const links = [
-        { href: '/index.html', text: 'Home', className: 'thispage' },
-        { href: '/projects.html', text: 'Projects' },
-        { href: '/contact.html', text: 'Contact' }
+        { href: 'index.html', text: 'Home', className: 'thispage' },
+        { href: 'projects.html', text: 'Projects' },
+        { href: 'contact.html', text: 'Contact' }
     ];
 
     // Create list items dynamically
