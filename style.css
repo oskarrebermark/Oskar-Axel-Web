@@ -25,13 +25,14 @@ body {
     list-style-type: none;
     display: flex;
     justify-content: space-around;
+    transform: skew(-20deg);
 }
 
 .navbar a {
     color: white;
     text-decoration: none;
     padding: 0.5rem 1rem;
-    border-radius: 20px 3px;
+    border-radius: 2px;
     transition: 0.5s ease all;
     border: solid;
     border-width: 2px;
