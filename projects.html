@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Portfolio 9907</title>
     <link rel="stylesheet" href="/style.css">
+    <script src="/functions.js"></script>
 </head>
 <body>
     
@@ -20,16 +21,26 @@
             </div>
         </nav>
     </header>
-    
-    <div class="mainContent">
+    <div class="contentBackground">
         <h2>PROJECTS</h2>
-        <br>
-        <p>On this page you'll find some projects I have taken part in. </p>
-        <div class="contentBox" id="box1">
-            <p>Media Technology and Interaction Design project: Summate</p>
-        </div>
-        <div class="contentBox" id="box2">
-            <embed src="resources/G22_Workbook-compressed.pdf" width="100%" height="100%">
+        <p>On this page you'll find some projects I have taken part in. Use the tabs to look at different projects.</p>
+        
+        <div class="mainContent">
+            
+            <div class="contentBox">
+                <button onclick="openCity('Summate')">Summate</button>
+                <button onclick="openCity('AIG_faces')">AIG faces</button>
+            </div>
+        
+            <div id="Summate" class="project">
+                <h2>Summate</h2>
+                <p>"Summate" was a project undertaken in the course "Media Technology and Interaction Design".</p>
+            </div>
+            
+            <div id="AIG_faces" class="project" style="display:none">
+                <h2>AI-generated faces and real faces in gym websites</h2>
+                <p>AIG faces  was a project undertaken in the course </p>
+            </div>
         </div>
     </div>
 

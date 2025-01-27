@@ -7,9 +7,10 @@
 }
 
 :root {
-    --mainColor: #D7CFC2;
-    --black: #0D0D0D;
+    --mainColor: #F2E3D5;
+    --black: #404040;
     --backgroundGradient: linear-gradient(to bottom right, #D9C9BA, #F2E3D5);
+    --reverseGradient: linear-gradient(to bottom right, #404040, #262626);
 }
 
 body {
@@ -17,11 +18,18 @@ body {
     background-size: 100%;
     min-height: 100vh;
     background-repeat: space;
-    margin-top: 50px;
+    margin-top: 2%;
 }
 
 p {
     color: white;
+    align-self: center;
+    padding: 2%;
+}
+
+h2 {
+    padding-top: 2%;
+    padding-left: 2%;
 }
 
 .navbar {
@@ -57,46 +65,65 @@ p {
     border-radius: 20px;
 }
 
-.mainContent {
-    margin: 5% 2% 0%;
-    padding: 10px;
-    background-color: rgba(255, 255, 255, 0.1);
+.contentBackground {
+    background-image: var(--reverseGradient);
     border-radius: 10px;
+    margin: 5% 2% 0%;
+}
+
+.mainContent {
+    position: relative;
+    padding: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
-.contentP {
-    width: 2fr;
-    grid-row-start: 1;
-    color: white;
+.contentBackground p {
     font-weight: 100;
-    align-self: center;
-    text-align: center;
 }
 
 .contentBox {
     margin: 4%;
     width: 1fr;
-    height: 400px;
+    height: auto;
 }
 
-#box1 {
-    grid-column-start: 1;
+/* tabs */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: var(--black);
 }
 
-#box2 {
-    grid-column-start: 2;
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
 }
 
-#box3 {
-    grid-column-start: 1;
+.tab button:hover {
+    background-color: #ddd;
 }
 
-#box4 {
-    grid-column-start: 2;
+.tab button.active {
+    background-color: #ccc;
 }
+
+.tabcontent {
+    display: none;
+    background-color: #F22738;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
 
 @media (max-width: 768px) {
-    
+    .mainContent {
+        grid-template-columns: 1fr;
+    }
 }
