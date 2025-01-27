@@ -25,23 +25,19 @@
         <h2>PROJECTS</h2>
         <p>On this page you'll find some projects I have taken part in. Use the tabs to look at different projects.</p>
         
-        <div class="mainContent">
-            
-            <div class="contentBox">
-                <button onclick="openCity('Summate')">Summate</button>
-                <button onclick="openCity('AIG_faces')">AIG faces</button>
-            </div>
-        
-            <div id="Summate" class="project">
-                <h2>Summate</h2>
-                <p>"Summate" was a project undertaken in the course "Media Technology and Interaction Design".</p>
-            </div>
-            
-            <div id="AIG_faces" class="project" style="display:none">
-                <h2>AI-generated faces and real faces in gym websites</h2>
-                <p>AIG faces  was a project undertaken in the course </p>
-            </div>
+        <div class="tabBox">
+            <button onclick="openProject('Summate')">Summate</button>
+            <button onclick="openProject('AIG_faces')">AIG faces</button>
         </div>
+        <div id="Summate" class="project" style="display: block;">
+            <h3>Summate</h3>
+            <p>"Summate" was a project undertaken in the course "Media Technology and Interaction Design".</p>
+        </div>
+        <div id="AIG_faces" class="project" style="display:none">
+            <h3>AI-generated faces and real faces in gym websites</h3>
+            <p>AIG faces  was a project undertaken in the course </p>
+        </div>
+        
     </div>
 
 </body>

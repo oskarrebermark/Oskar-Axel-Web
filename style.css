@@ -9,12 +9,17 @@
 :root {
     --mainColor: #F2E3D5;
     --black: #404040;
-    --backgroundGradient: linear-gradient(to bottom right, #D9C9BA, #F2E3D5);
-    --reverseGradient: linear-gradient(to bottom right, #404040, #262626);
+    --red: #F22738;
+    --green: #3B942C;
+    --blue: #1B6FFF;
+    --doc: #F2DCB3;
+    --docshadow: #BFA980;
+    --backgroundGradient: linear-gradient(to bottom right, #D9C9BA, #ffa047);
+    --blackGradient: linear-gradient(to bottom right, #404040, #262626);
 }
 
 body {
-    background-image: var(--backgroundGradient);
+    background-image: url(/resources/webBackground.png);
     background-size: 100%;
     min-height: 100vh;
     background-repeat: space;
@@ -28,6 +33,16 @@ p {
 }
 
 h2 {
+    font-size: 3vw;
+    padding-top: 2%;
+    padding-left: 2%;
+    text-decoration: underline;
+    text-decoration-thickness: 6px;
+    text-decoration-color: var(--blue);
+}
+
+h3 {
+    font-size: 2vw;
     padding-top: 2%;
     padding-left: 2%;
 }
@@ -56,24 +71,24 @@ h2 {
 .navbar a:hover {
     background-color: rgba(0, 0, 0, 0.1);
     border-radius: 20px;
-    color: #F22738;
+    color: var(--red);
     transition: background-color 0.5s ease;
 }
 
 .thispage {
-    background-color: #F22738;
+    background-color: var(--red);
     border-radius: 20px;
 }
 
 .contentBackground {
-    background-image: var(--reverseGradient);
+    background-image: var(--blackGradient);
     border-radius: 10px;
     margin: 5% 2% 0%;
+    box-shadow: 0px 0px 25px var(--black);
 }
 
 .mainContent {
     position: relative;
-    padding: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -89,36 +104,43 @@ h2 {
 }
 
 /* tabs */
-.tab {
-    overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: var(--black);
-}
 
-.tab button {
-    background-color: inherit;
-    float: left;
-    border: none;
-    outline: none;
+.tabBox button {
+    background-color: var(--doc);
     cursor: pointer;
-    padding: 14px 16px;
+    border-style: none;
+    border-radius: 10px 10px 0px 0px;
+    padding: 10px 16px;
+    box-shadow: var(--doc);
+    color: var(--black);
+    font-weight: 900;
     transition: 0.3s;
 }
 
-.tab button:hover {
-    background-color: #ddd;
+.tabBox button:hover {
+    color: var(--red);
 }
 
-.tab button.active {
+.tabBox button.active {
     background-color: #ccc;
 }
 
-.tabcontent {
+.project {
+    background-color: var(--doc);
     display: none;
-    background-color: #F22738;
-    padding: 6px 12px;
-    border: 1px solid #ccc;
     border-top: none;
+}
+
+.project p {
+    color: var(--black);
+}
+
+.project h2 {
+    color: var(--black);
+}
+
+.project h3 {
+    color: var(--blue);
 }
 
 

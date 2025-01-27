@@ -1,8 +1,8 @@
-function openCity(cityName) {
+function openProject(projectName) {
     var i;
     var x = document.getElementsByClassName("project");
     for (i = 0; i < x.length; i++) {
       x[i].style.display = "none";
     }
-    document.getElementById(cityName).style.display = "block";
+    document.getElementById(projectName).style.display = "block";
   }
