@@ -19,7 +19,7 @@
 }
 
 body {
-    background-image: url(/resources/webBackground.png);
+    background-image: url(/resources/gradientbackground2rotated.png);
     background-size: 100%;
     min-height: 100vh;
     background-repeat: space;
@@ -95,6 +95,7 @@ h3 {
     background-image: var(--blackGradient);
     border-radius: 10px;
     margin: 2% 2% 0%;
+    height: fit-content;
     box-shadow: 0px 0px 25px var(--black);
 }
 
@@ -167,7 +168,7 @@ h3 {
     position: relative;
     display: grid;
     grid-template-columns: 1fr;
-    margin: 1vw;
+    margin: 2vh;
 }
 
 .tabBox button {
