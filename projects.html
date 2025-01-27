@@ -6,17 +6,17 @@
     <title>Web Portfolio 9907</title>
     <link rel="stylesheet" href="/style.css">
     <script src="/functions.js"></script>
+    <script src="https://kit.fontawesome.com/716b3ef599.js" crossorigin="anonymous"></script>
 </head>
 <body>
     
     <header class="navbar">
         <nav>
             <div id="menuContent">
-                <div class=menuIcon></div>
                 <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="projects.html" class="thispage">PROJECTS</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="index.html"><i class="fa-solid fa-home"></i> HOME</a></li>
+                    <li><a href="projects.html" class="thispage"><i class="fa-solid fa-folder-open"></i> PROJECTS</a></li>
+                    <li><a href="contact.html"><i class="fa-solid fa-link"></i> CONTACT</a></li>
                 </ul>
             </div>
         </nav>
@@ -24,18 +24,29 @@
     <div class="contentBackground">
         <h2>PROJECTS</h2>
         <p>On this page you'll find some projects I have taken part in. Use the tabs to look at different projects.</p>
-        
-        <div class="tabBox">
-            <button onclick="openProject('Summate')">Summate</button>
-            <button onclick="openProject('AIG_faces')">AIG faces</button>
-        </div>
-        <div id="Summate" class="project" style="display: block;">
-            <h3>Summate</h3>
-            <p>"Summate" was a project undertaken in the course "Media Technology and Interaction Design".</p>
-        </div>
-        <div id="AIG_faces" class="project" style="display:none">
-            <h3>AI-generated faces and real faces in gym websites</h3>
-            <p>AIG faces  was a project undertaken in the course </p>
+        <div class="projectsContent">
+            <div class="tabBox">
+                <button class="tab activeP" onclick="openProject('Summate')">Summate</button>
+                <button class="tab" onclick="openProject('AIG_faces')">AIG faces</button>
+            </div>
+            <div id="Summate" class="project" style="display: block;">
+                <h3>Summate</h3>
+                <p>"Summate" was a project undertaken in the course "Media Technology and Interaction Design".</p>
+
+                <h3>About</h3>
+                <p>The project centered around the concept of interdependence in hiking. 
+                Using the Double Diamond design framework, we explored logistical challenges faced by hikers, such as preparation and borrowing items. 
+                We developed a mobile app prototype aimed at enhancing collaboration and organization among hikers by providing tools like customizable 
+                checklists, gear tracking, and shared packing responsibilities.</p>
+
+            </div>
+            <div id="AIG_faces" class="project" style="display:none">
+                <h3>AI-generated faces and real faces in gym websites</h3>
+                <p>AIG faces  was a project undertaken in the course </p>
+
+
+
+            </div>
         </div>
         
     </div>

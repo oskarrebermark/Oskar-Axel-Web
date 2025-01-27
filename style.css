@@ -26,7 +26,12 @@ body {
     margin-top: 2%;
 }
 
+a {
+    font-size: 2vw;
+}
+
 p {
+    font-size: 2vw;
     color: white;
     align-self: center;
     padding: 2%;
@@ -37,7 +42,7 @@ h2 {
     padding-top: 2%;
     padding-left: 2%;
     text-decoration: underline;
-    text-decoration-thickness: 6px;
+    text-decoration-thickness: 0.25em;
     text-decoration-color: var(--blue);
 }
 
@@ -46,7 +51,9 @@ h3 {
     padding-top: 2%;
     padding-left: 2%;
 }
+/*------------------------------------------------------------------------------------------*/
 
+/*NAVBAR*/
 .navbar {
     position: sticky;
     top: 0;
@@ -70,16 +77,20 @@ h3 {
 
 .navbar a:hover {
     background-color: rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
+    border-radius: 20em;
     color: var(--red);
     transition: background-color 0.5s ease;
 }
 
 .thispage {
     background-color: var(--red);
-    border-radius: 20px;
+    border-radius: 20em;
+    box-shadow: 0 0 100px grey;
 }
+/*------------------------------------------------------------------------------------------*/
 
+
+/*HOME*/
 .contentBackground {
     background-image: var(--blackGradient);
     border-radius: 10px;
@@ -93,27 +104,81 @@ h3 {
     grid-template-columns: 1fr 1fr;
 }
 
-.contentBackground p {
-    font-weight: 100;
-}
-
 .contentBox {
     margin: 4%;
     width: 1fr;
     height: auto;
 }
 
-/* tabs */
+.contentBackground p {
+    font-weight: 100;
+}
+/*------------------------------------------------------------------------------------------*/
+
+
+/*CONTACT*/
+.mainContactContent {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 1fr;
+    grid-template-rows: auto;
+    align-items: center;
+    align-content: center;
+    margin: 1vw;
+    padding-bottom: 1vw;
+}
+
+.contactBox img {
+    width: 4vw;
+}
+
+.invert {
+    filter: invert(100%);
+}
+
+.contactBox {
+    padding: 1vw;
+    margin-bottom: 10%;
+}
+
+.contactBox a {
+    color: var(--blue);
+    text-decoration: none;
+    border-radius: 2em;
+    padding: 0.5em;
+}
+
+.contactBox a:hover {
+    background-color: var(--blue);
+    color: var(--mainColor);
+    transition: 0.5s ease all;
+}
+
+.contactBox a::before {
+    content: "\2192";
+    margin-right: 2em;
+    color: #3B942C;
+    font-size: larger;
+}
+/*------------------------------------------------------------------------------------------*/
+
+/*PROJECTS*/
+.projectsContent {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 1vw;
+}
 
 .tabBox button {
+    font-size: 2vw;
+    font-weight: bold;
     background-color: var(--doc);
     cursor: pointer;
     border-style: none;
-    border-radius: 10px 10px 0px 0px;
-    padding: 10px 16px;
-    box-shadow: var(--doc);
+    border-radius: 1vh 1vh 0 0;
+    padding: 1% 6%;
     color: var(--black);
-    font-weight: 900;
     transition: 0.3s;
 }
 
@@ -121,14 +186,19 @@ h3 {
     color: var(--red);
 }
 
-.tabBox button.active {
-    background-color: #ccc;
-}
-
 .project {
-    background-color: var(--doc);
     display: none;
     border-top: none;
+    background-color: var(--doc);
+    border-radius: 0 1em 0 0;
+}
+
+.tab {
+    box-shadow: inset 0 -2px 5px var(--docshadow);
+}
+
+.activeP {
+    box-shadow: none;
 }
 
 .project p {
@@ -140,12 +210,71 @@ h3 {
 }
 
 .project h3 {
-    color: var(--blue);
+    color: var(--black);
 }
+/*------------------------------------------------------------------------------------------*/
 
-
+/*DEVICE CONTROL*/
 @media (max-width: 768px) {
     .mainContent {
         grid-template-columns: 1fr;
+    }
+
+    /*ALL*/
+    a {
+        font-size: 3vw;
+    }
+    
+    p {
+        font-size: 4vw;
+    }
+    
+    h2 {
+        font-size: 5vw;
+    }
+    
+    h3 {
+        font-size: 5vw;
+    }
+
+    .contentBox {
+        margin: 1%;
+        width: 1fr;
+        height: auto;
+    }
+
+    /*CONTACTS*/
+    .contactBox a {
+        font-size: 3vw;
+    }
+
+    /*PROJECTS*/
+    .tabBox button {
+        font-size: 3vw;
+        padding: 1% 6%;
+    }
+}
+
+@media (min-width: 1100px) {
+    /*ALL*/
+    a {
+        font-size: 1.5vw;
+    }
+    
+    p {
+        font-size: 1.5vw;
+    }
+    
+    h2 {
+        font-size: 2.5vw;
+    }
+    
+    h3 {
+        font-size: 1.8vw;
+    }
+
+    /*PROJECTS*/
+    .tabBox button {
+        font-size: 1.5vw;
     }
 }
