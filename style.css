@@ -13,6 +13,10 @@ body {
     margin-top: 50px;
 }
 
+p {
+    color: white;
+}
+
 .navbar {
     position: fixed;
     top: 0;
@@ -66,10 +70,6 @@ body {
     font-weight: 100;
     align-self: center;
     text-align: center;
-}
-
-p {
-    color: white;
 }
 
 .contentBox {
