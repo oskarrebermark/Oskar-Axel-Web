@@ -20,7 +20,7 @@
 
 body {
     background-image: url(/resources/gradientbackground2rotated.png);
-    background-size: 100%;
+    background-size: auto 100%;
     min-height: 100vh;
     background-repeat: space;
     margin-top: 2%;
@@ -50,6 +50,16 @@ h3 {
     font-size: 2vw;
     padding-top: 2%;
     padding-left: 2%;
+}
+
+.errorPDF {
+    color: green; 
+    font-size: larger; 
+    color: white; 
+    background-color: #1B6FFF; 
+    border-radius: 1vh;
+    padding: 1vh;
+    margin-left: 25%;
 }
 /*------------------------------------------------------------------------------------------*/
 
@@ -232,6 +242,10 @@ h3 {
     /*ALL*/
     a {
         font-size: 3vw;
+    }
+
+    .navbar a {
+        padding: 0.5rem 1.5rem;
     }
     
     p {
