@@ -6,6 +6,7 @@
     <title>Web Portfolio 9907</title>
     <link rel="stylesheet" href="/style.css">
     <script src="javascript/functions.js"></script>
+    <script type="text/javascript" src="/javascript/pdf.js"></script>
     <script src="https://kit.fontawesome.com/716b3ef599.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -48,25 +49,15 @@
                 <p>The project resulted in a mobile app prototype featuring a customizable checklist for trip preparation, digital gear inventory tracking, 
                 and tools for requesting or borrowing items. It also allowed group collaboration by sharing packing responsibilities, ensuring all needs were met efficiently and seamlessly.</p>
 
-                <p>If you want to have a closer look, please see the Workbook PDF below.</p>
+                <!-- <p>If you want to have a closer look, please see the Workbook PDF below.</p>
                 <object data="resources/G22_Workbook-compressed.pdf" class="pdf" height="590">
                     <p style="color: red;">Oops! Your browser doesn't support PDFs!</p>
                     <p><a href="/resources/G22_Workbook-compressed.pdf" class="errorPDF" >Download Instead</a></p>
+                </object> -->
+                <object data="mypdf.pdf" type="application/pdf" frameborder="0" width="100%" height="600px" style="padding: 20px;">
+                    <embed src="https://drive.google.com/file/d/1MfJb5swjC7JLCeZnj-27yuCN0zZEefUw/preview?usp=sharing" width="100%" height="600px"/> 
                 </object>
-
-                <div id="adobe-dc-view" style="height: 360px; width: 500px;"></div>
-                <script src="https://acrobatservices.adobe.com/view-sdk/viewer.js"></script>
-                <script type="text/javascript"> 
-                    document.addEventListener("adobe_dc_view_sdk.ready", 
-                    function(){
-                    var adobeDCView = new AdobeDC.View({clientId: "acbab9e67d73486b84045c3cdb4ef3f0", divId: "adobe-dc-view"});
-                    adobeDCView.previewFile({content:{ location:{ url: "https://acrobatservices.adobe.com/view-sdk-demo/PDFs/Bodea%20Brochure.pdf"}},
-                    metaData:{fileName: "Bodea Brochure.pdf"}},
-                        {
-                        embedMode: "SIZED_CONTAINER"
-                        });
-                    });
-                    </script>
+                
 
             </div>
 
