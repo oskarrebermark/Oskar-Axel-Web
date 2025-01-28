@@ -30,10 +30,11 @@ body {
 
 a {
     font-size: 2vw;
+    color: var(--black);
 }
 
 p {
-    font-size: 2vw;
+    font-size: 1vw;
     color: white;
     align-self: center;
     padding: 2%;
@@ -54,6 +55,7 @@ h3 {
     padding-left: 2%;
 }
 /*------------------------------------------------------------------------------------------*/
+
 
 /*NAVBAR*/
 .navbar {
@@ -84,9 +86,14 @@ h3 {
 }
 
 .thispage {
+    color: var(--black);
     background-color: var(--yellow);
     border-radius: 20em;
     box-shadow: 0 0 100px grey;
+}
+
+.thispage em {
+    color: var(--black);
 }
 /*------------------------------------------------------------------------------------------*/
 
@@ -149,25 +156,27 @@ h3 {
 }
 
 .contactBox a {
+    background-color: white;
     color: var(--blue);
     text-decoration: none;
     border-radius: 2em;
-    padding: 0.5em;
+    padding: 0.5em 1em 0.5em 0.5em;
 }
 
 .contactBox a:hover {
     background-color: var(--blue);
-    color: var(--mainColor);
+    color: white;
     transition: 0.5s ease all;
 }
 
 .contactBox a::before {
     content: "\2192";
-    margin-right: 2em;
-    color: white;
+    margin-right: 1em;
+    color: var(--black);
     font-size: larger;
 }
 /*------------------------------------------------------------------------------------------*/
+
 
 /*PROJECTS*/
 .projectsContent {
@@ -190,7 +199,7 @@ h3 {
 }
 
 .tabBox button:hover {
-    color: var(--red);
+    background-color: var(--yellow);
 }
 
 .project {
@@ -203,7 +212,7 @@ h3 {
 }
 
 .tab {
-    box-shadow: inset 0 -2px 5px var(--docshadow);
+    box-shadow: inset 0 -2px var(--docshadow);
 }
 
 .activeP {
@@ -238,6 +247,7 @@ h3 {
     color: var(--black);
 }
 /*------------------------------------------------------------------------------------------*/
+
 
 /*DEVICE CONTROL*/
 @media (max-width: 768px) {
