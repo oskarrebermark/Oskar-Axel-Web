@@ -12,14 +12,15 @@
     --red: #F22738;
     --green: #3B942C;
     --blue: #1B6FFF;
+    --yellow: #F2C53D;
     --doc: #F2DCB3;
     --docshadow: #BFA980;
-    --backgroundGradient: linear-gradient(to bottom right, #D9C9BA, #ffa047);
+    --backgroundGradient: linear-gradient(to bottom, #1B6FFF, #1659CC);
     --blackGradient: linear-gradient(to bottom right, #404040, #262626);
 }
 
 body {
-    background-color: var(--mainColor);
+    background-image: var(--backgroundGradient);
     background-size: auto 100%;
     min-height: 100vh;
     background-repeat: space;
@@ -41,10 +42,10 @@ p {
 h2 {
     font-size: 3vw;
     padding-top: 2%;
-    padding-left: 2%;
+    padding-right: 5%;
     text-decoration: underline;
     text-decoration-thickness: 0.25em;
-    text-decoration-color: var(--blue);
+    text-decoration-color: var(--yellow);
 }
 
 h3 {
@@ -77,14 +78,13 @@ h3 {
 }
 
 .navbar a:hover {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.2);
     border-radius: 20em;
-    color: var(--red);
     transition: background-color 0.5s ease;
 }
 
 .thispage {
-    background-color: var(--red);
+    background-color: var(--yellow);
     border-radius: 20em;
     box-shadow: 0 0 100px grey;
 }
@@ -94,10 +94,15 @@ h3 {
 /*HOME*/
 .contentBackground {
     background-image: var(--blackGradient);
-    border-radius: 10px;
+    border-radius: 1em;
+    padding: 0.5em;
     margin: 2% 2% 0%;
     height: fit-content;
     box-shadow: 0px 0px 25px var(--black);
+}
+
+.contentBackground h2 {
+    text-align: right;
 }
 
 .mainContent {
@@ -159,7 +164,7 @@ h3 {
 .contactBox a::before {
     content: "\2192";
     margin-right: 2em;
-    color: #3B942C;
+    color: white;
     font-size: larger;
 }
 /*------------------------------------------------------------------------------------------*/
