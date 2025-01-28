@@ -51,16 +51,6 @@ h3 {
     padding-top: 2%;
     padding-left: 2%;
 }
-
-.errorPDF {
-    color: green; 
-    font-size: larger; 
-    color: white; 
-    background-color: #1B6FFF; 
-    border-radius: 1vh;
-    padding: 1vh;
-    margin-left: 25%;
-}
 /*------------------------------------------------------------------------------------------*/
 
 /*NAVBAR*/
@@ -178,7 +168,7 @@ h3 {
     position: relative;
     display: grid;
     grid-template-columns: 1fr;
-    margin: 2vh;
+    margin: 1vh;
 }
 
 .tabBox button {
@@ -218,6 +208,17 @@ h3 {
     margin-left: 20%;
     margin-right: 20%;
     width: 60%;
+}
+
+.errorPDF {
+    color: green; 
+    font-size: larger; 
+    color: white; 
+    background-color: #1B6FFF; 
+    border-radius: 1vh;
+    padding: 1vh;
+    margin-left: 25%;
+    display: hidden;
 }
 
 .project p {
@@ -275,6 +276,13 @@ h3 {
     .tabBox button {
         font-size: 3vw;
         padding: 1% 6%;
+    }
+
+    .pdf {
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 80%;
+        height: 200;
     }
 }
 
