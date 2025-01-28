@@ -211,6 +211,16 @@ h3 {
     padding: 1%;
 }
 
+#AIG_pdf {
+    color: white;
+    background-color: var(--blue);
+    padding: 1vh;
+    border-radius: 2vh;
+    text-decoration: none;
+    margin-top: 15%;
+    margin-left: 30%;
+}
+
 .project p {
     color: var(--black);
 }
