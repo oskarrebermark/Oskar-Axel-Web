@@ -1,9 +1,9 @@
 * {
     margin: 0;
     padding: 0;
+    color: white;
     box-sizing: border-box;
     font-family: "Helvetica", "Sans-serif";
-    color: white;
 }
 
 :root {
@@ -16,34 +16,30 @@
     --doc: #F2DCB3;
     --docshadow: #BFA980;
     --backgroundGradient: linear-gradient(to bottom, #1B6FFF, #1659CC);
-    --blackGradient: linear-gradient(to bottom right, #404040, #262626);
+    --blackGradient: linear-gradient(to bottom, #404040, #262626);
+    --whiteGradient: linear-gradient(to bottom, whitesmoke, lightgrey);
 }
 
 body {
-    background-image: var(--backgroundGradient);
+    background-image: var(--blackGradient);
     background-size: auto 100%;
-    min-height: 100vh;
+    min-height: 200vh;
     background-repeat: space;
     margin-top: 2%;
     overflow-x: hidden;
 }
 
 a {
-    font-size: 2vw;
-    color: var(--black);
+    font-size: 2em;
 }
 
 p {
-    font-size: 1vw;
-    color: white;
+    font-size: 1.5em;
     align-self: center;
-    padding: 2%;
 }
 
 h2 {
-    font-size: 3vw;
-    padding-top: 2%;
-    padding-right: 5%;
+    font-size: 3em;
     text-decoration: underline;
     text-decoration-thickness: 0.25em;
     text-decoration-color: var(--yellow);
@@ -80,16 +76,16 @@ h3 {
 }
 
 .navbar a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 20em;
-    transition: background-color 0.5s ease;
+    background-color: var(--red);
+    box-shadow: 5px 5px black;
+    color: white;
+    transition: background-color 0.5s ease all;
 }
 
-.thispage {
+.navbar .thispage {
     color: var(--black);
     background-color: var(--yellow);
-    border-radius: 20em;
-    box-shadow: 0 0 100px grey;
+    box-shadow: 5px 5px black;
 }
 
 .thispage em {
@@ -100,22 +96,17 @@ h3 {
 
 /*HOME*/
 .contentBackground {
-    background-image: var(--blackGradient);
-    border-radius: 1em;
     padding: 0.5em;
     margin: 2% 2% 0%;
     height: fit-content;
-    box-shadow: 0px 0px 25px var(--black);
-}
-
-.contentBackground h2 {
-    text-align: right;
 }
 
 .mainContent {
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    column-gap: 4%;
+    align-content: center;
 }
 
 .contentBox {
@@ -127,22 +118,56 @@ h3 {
 .contentBackground p {
     font-weight: 100;
 }
+
+#hireBox {
+    box-shadow: 5px 5px white;
+    padding: 1vh 2vh;
+    background-color: var(--green);
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 4%;
+    grid-row-gap: 4%;
+    justify-content: center;
+}
+
+.gridItem {
+    width: 1fr;
+    padding: 1vw;
+    border-bottom-style: dashed;
+}
+
+.title {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.title p {
+    margin-top: 4%;
+}
+
+.headline {
+}
+
+.adSpot {
+    width: 100%;
+    align-content: center;
+    border-bottom-style: none;
+}
 /*------------------------------------------------------------------------------------------*/
 
 
 /*CONTACT*/
-.mainContactContent {
-    position: relative;
-    display: grid;
-    grid-template-columns: 1fr 0.5fr 1fr;
-    grid-template-rows: auto;
-    align-items: center;
-    align-content: center;
-    margin: 1vw;
-    padding-bottom: 1vw;
+.contact {
+    grid-template-columns: 1fr;
 }
 
-.contactBox img {
+.gridItem img {
     width: 4vw;
 }
 
@@ -150,30 +175,18 @@ h3 {
     filter: invert(100%);
 }
 
-.contactBox {
-    padding: 1vw;
-    margin-bottom: 10%;
-}
-
 .contactBox a {
-    background-color: white;
-    color: var(--blue);
+    background-color: black;
+    color: white;
     text-decoration: none;
-    border-radius: 2em;
+    box-shadow: 5px 5px white;
     padding: 0.5em 1em 0.5em 0.5em;
 }
 
 .contactBox a:hover {
-    background-color: var(--blue);
+    background-color: var(--green);
     color: white;
     transition: 0.5s ease all;
-}
-
-.contactBox a::before {
-    content: "\2192";
-    margin-right: 1em;
-    color: var(--black);
-    font-size: larger;
 }
 /*------------------------------------------------------------------------------------------*/
 
@@ -239,10 +252,6 @@ h3 {
     color: var(--black);
 }
 
-.project h2 {
-    color: var(--black);
-}
-
 .project h3 {
     color: var(--black);
 }
@@ -299,26 +308,26 @@ h3 {
     }
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 1400px) {
     /*ALL*/
     a {
-        font-size: 1.5vw;
+        font-size: 1.5em;
     }
     
     p {
-        font-size: 1.5vw;
+        font-size: 1.5em;
     }
     
     h2 {
-        font-size: 2.5vw;
+        font-size: 2.5em;
     }
     
     h3 {
-        font-size: 1.8vw;
+        font-size: 1.8em;
     }
 
     /*PROJECTS*/
     .tabBox button {
-        font-size: 1.5vw;
+        font-size: 1.5em;
     }
 }
