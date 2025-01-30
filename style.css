@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    color: white;
+    color: var(--black);
     box-sizing: border-box;
     font-family: "Helvetica", "Sans-serif";
 }
@@ -21,7 +21,7 @@
 }
 
 body {
-    background-image: var(--blackGradient);
+    background-image: var(--whiteGradient);
     background-size: auto 100%;
     min-height: 200vh;
     background-repeat: space;
@@ -69,7 +69,7 @@ h3 {
 }
 
 .navbar a {
-    color: white;
+    color: var(--black);
     text-decoration: none;
     padding: 0.5rem 2rem;
     transition: 0.5s ease all;
@@ -78,7 +78,6 @@ h3 {
 .navbar a:hover {
     background-color: var(--red);
     box-shadow: 5px 5px black;
-    color: white;
     transition: background-color 0.5s ease all;
 }
 
@@ -120,11 +119,16 @@ h3 {
 }
 
 #hireBox {
-    box-shadow: 5px 5px white;
+    box-shadow: 5px 5px black;
     padding: 1vh 2vh;
+    color: white;
     background-color: var(--green);
     text-decoration: none;
     font-size: 1em;
+}
+
+#hireBox i {
+    color: white;
 }
 
 .container {
@@ -178,13 +182,9 @@ h3 {
     width: 4vw;
 }
 
-.invert {
-    filter: invert(100%);
-}
-
 .contactBox a {
     background-color: var(--blue);
-    color: --black;
+    color: white;
     text-decoration: none;
     box-shadow: 5px 5px black;
     padding: 0.5em 1em 0.5em 0.5em;
@@ -355,5 +355,23 @@ h3 {
     /*PROJECTS*/
     .tabBox button {
         font-size: 1.5em;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    * {
+        color: white;
+    }
+
+    body {
+        background-image: var(--blackGradient);
+    }
+
+    .navbar a {
+        color: white;
+    }
+
+    .invert {
+        filter: invert(100%);
     }
 }
