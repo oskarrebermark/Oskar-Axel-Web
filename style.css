@@ -192,11 +192,24 @@ h3 {
 
 
 /*PROJECTS*/
-.projectsContent {
-    position: relative;
+.projContainer {
     display: grid;
-    grid-template-columns: 1fr;
-    margin: 1vh;
+    grid-template-columns: 1fr 3fr;
+}
+
+.projEnd {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding: 2vh;
+    text-align: center;
+}
+
+.projContainer .gridItem {
+    border-bottom-color: var(--black);
+}
+
+.tabBox {
+    margin-top: 2vh;
 }
 
 .tabBox button {
@@ -205,18 +218,18 @@ h3 {
     background-color: var(--doc);
     cursor: pointer;
     border-style: none;
-    border-radius: 1vh 1vh 0 0;
-    padding: 1% 6%;
+    border-radius: 0.5vh 0.5vh 0 0;
+    padding: 1% 4%;
     color: var(--black);
     transition: 0.3s;
 }
 
 .tabBox button:hover {
-    background-color: var(--yellow);
+    text-decoration: underline;
+    text-decoration-thickness: 0.25em;
 }
 
 .project {
-    display: none;
     border-top: none;
     background-color: var(--doc);
     border-radius: 0 1em 1em 1em;
@@ -233,19 +246,17 @@ h3 {
 }
 
 #SummatePDF {
-    width: 90%;
-    height: 50%;
-    padding: 1%;
+    width: 100vh;
+    height: 65vh;
+    padding: 2%;
 }
 
 #AIG_pdf {
     color: white;
     background-color: var(--blue);
+    box-shadow: 5px 5px black;
     padding: 1vh;
-    border-radius: 2vh;
     text-decoration: none;
-    margin-top: 15%;
-    margin-left: 30%;
 }
 
 .project p {
@@ -300,6 +311,15 @@ h3 {
     .tabBox button {
         font-size: 3vw;
         padding: 1% 6%;
+    }
+    
+    .projContainer {
+    grid-template-columns: 1fr;
+}
+    
+    .homeInfo {
+        display: grid;
+        grid-template-columns: 1fr;
     }
 
     #SummatePDF {
