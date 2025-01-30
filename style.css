@@ -222,10 +222,9 @@ h3 {
 .tabBox button {
     font-size: 2vw;
     font-weight: bold;
-    background-color: var(--doc);
+    background-color: var(--mainColor);
     cursor: pointer;
     border-style: none;
-    border-radius: 0.5vh 0.5vh 0 0;
     padding: 1% 4%;
     color: var(--black);
     transition: 0.3s;
@@ -238,8 +237,7 @@ h3 {
 
 .project {
     border-top: none;
-    background-color: var(--doc);
-    border-radius: 0 1em 1em 1em;
+    background-color: var(--mainColor);
     margin-bottom: 1vw;
     padding-bottom: 2vh;
 }
