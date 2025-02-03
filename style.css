@@ -180,6 +180,7 @@ h3 {
 
 .gridItem img {
     width: 4vw;
+    border-radius: 1vh;
 }
 
 .contactBox a {
@@ -254,12 +255,6 @@ h3 {
     box-shadow: none;
 }
 
-#SummatePDF {
-    width: 100vh;
-    height: 65vh;
-    padding: 2%;
-}
-
 #AIG_pdf {
     color: white;
     background-color: var(--blue);
@@ -274,6 +269,37 @@ h3 {
 
 .project h3 {
     color: var(--black);
+}
+
+.imgPair {
+    display: grid;
+    text-align: center;
+    background-color: white;
+    justify-self: center;
+    margin: 2vh;
+    border-radius: 1vh;
+    box-shadow: 0 0 5px var(--black);
+}
+
+.imgPair img {
+    align-content: center;
+    width: 30vw;
+    border-radius: 1vh 1vh 0 0;
+}
+
+#summate_prototype img {
+    width: 80vw;
+}
+
+.imgPair em {
+    padding-bottom: 1vh;
+}
+
+.projEndPair {
+    display: inline-flex;
+    width: 100%;
+    grid-template-columns: auto;
+    justify-content: center;
 }
 /*------------------------------------------------------------------------------------------*/
 
@@ -338,7 +364,7 @@ h3 {
     }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1600px) {
     /*ALL*/
     a {
         font-size: 1.5em;
