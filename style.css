@@ -21,7 +21,7 @@
 }
 
 body {
-    background-image: var(--whiteGradient);
+    background-color: white;
     background-size: auto 100%;
     min-height: 200vh;
     background-repeat: space;
@@ -364,7 +364,7 @@ h3 {
     }
 
     body {
-        background-image: var(--blackGradient);
+        background-color: var(--black);
     }
 
     .navbar a {
