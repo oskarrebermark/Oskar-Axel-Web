@@ -202,6 +202,8 @@ h3 {
 .projContainer {
     display: grid;
     grid-template-columns: 1fr 3fr;
+    padding: 0 2vh;
+
 }
 
 .projEnd {
@@ -213,10 +215,12 @@ h3 {
 
 .projContainer .gridItem {
     border-bottom-color: var(--black);
+    padding: 4vh 0;
 }
 
 .tabBox {
     margin-top: 2vh;
+    z-index: 10;
 }
 
 .tabBox button {
@@ -320,7 +324,7 @@ h3 {
     }
 
     #SummatePDF {
-        width: 100%;
+        width: 100vw;
         height: 600px;
     }
     
