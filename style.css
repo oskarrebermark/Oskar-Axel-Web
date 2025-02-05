@@ -23,8 +23,7 @@
 body {
     background-color: white;
     background-size: auto 100%;
-    min-height: 200vh;
-    background-repeat: space;
+    min-height: 100%;
     margin-top: 2%;
     overflow-x: hidden;
 }
@@ -170,6 +169,10 @@ h3 {
     align-content: center;
     border-bottom-style: none;
 }
+
+.homeInfo {
+    margin-bottom: 15%;
+}
 /*------------------------------------------------------------------------------------------*/
 
 
@@ -296,15 +299,20 @@ h3 {
     color: var(--black);
 }
 
+.clickable {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1em;
+    padding: 0.5vh;
+    background-color: var(--yellow);
+    box-shadow: 4px 4px var(--black);
+}
+
 .projEndPair {
     display: inline-flex;
     width: 100%;
     grid-template-columns: auto;
     justify-content: center;
-}
-
-#clickable {
-    text-decoration: underline;
 }
 /*------------------------------------------------------------------------------------------*/
 
